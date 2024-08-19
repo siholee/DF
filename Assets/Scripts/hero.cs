@@ -4,6 +4,7 @@ public class hero : MonoBehaviour
 {
     public string NAME;
     public string TYPE;
+    public string RANK;
     public int HP;
     public int ATK;
     public int DEF;

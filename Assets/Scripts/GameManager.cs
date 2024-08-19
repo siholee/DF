@@ -5,43 +5,60 @@ using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
-    public GameObject MainTower; // MainTower 오브젝트를 연결
-    public Button SummonButton; // SummonButton을 연결할 변수
-    public GameObject HeroPrefab; // 생성할 hero 프리팹을 연결할 변수
+    public GameObject MainTower; // MainTower object
+    public Button SummonButton; // Button to summon heroes
+    public GameObject HeroPrefab; // Prefab for heroes
+    public CircularGrid gridSystem; // Reference to the CircularGrid script
+    public CircularBuildingPlacer buildingPlacer; // Reference to the building placer script
 
     void Start()
     {
-        // SummonButton에 클릭 이벤트를 연결
+        // Hook up the SummonButton click event
         SummonButton.onClick.AddListener(CreateNewHero);
+
+        // Initialize the grid system
+        InitializeGridSystem();
     }
 
     void Update()
     {
-
+        // Add any updates that need to interact with the grid or other game logic
     }
 
-    // SummonButton이 클릭될 때 호출되는 메서드
+    void InitializeGridSystem()
+    {
+        if (gridSystem != null)
+        {
+            gridSystem.GenerateGrid();
+        }
+    }
+
     void CreateNewHero()
     {
-        // MainTower 컴포넌트에서 heroes 리스트를 가져오기
-        tower towerComponent = MainTower.GetComponent<tower>();
-
-        if (towerComponent != null && HeroPrefab != null)
+        // Example interaction: place a building on the grid when summoning a hero
+        if (MainTower != null && HeroPrefab != null)
         {
-            // hero 프리팹을 인스턴스화
-            GameObject newHeroObject = Instantiate(HeroPrefab);
+            // Summon hero at the MainTower
+            tower towerComponent = MainTower.GetComponent<tower>();
 
-            // 생성된 hero를 MainTower의 하위로 설정
-            newHeroObject.transform.SetParent(MainTower.transform);
+            if (towerComponent != null)
+            {
+                GameObject newHeroObject = Instantiate(HeroPrefab);
+                newHeroObject.transform.SetParent(MainTower.transform);
+                towerComponent.heroes.Add(newHeroObject);
 
-            // hero 오브젝트를 MainTower의 heroes 리스트에 추가
-            towerComponent.heroes.Add(newHeroObject);
-
-            Debug.Log("New hero prefab instantiated and added to the MainTower!");
+                // Optionally, place a building on the grid
+                PlaceBuildingOnGrid();
+            }
         }
-        else
+    }
+
+    void PlaceBuildingOnGrid()
+    {
+        if (buildingPlacer != null)
         {
-            Debug.LogWarning("Tower component or HeroPrefab not found.");
+            // Assume that buildingPlacer will handle the actual placement
+            buildingPlacer.PlaceBuilding();
         }
     }
 }
