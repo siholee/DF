@@ -3,6 +3,7 @@ using System.Collections.Generic;
 
 public class CircularGrid : MonoBehaviour
 {
+    public GameObject centralCellPrefab; // The prefab for the central cell
     public int numberOfRings = 5;
     public int sectorsPerRing = 6;
     public float ringSpacing = 2f;
@@ -11,7 +12,20 @@ public class CircularGrid : MonoBehaviour
 
     public void GenerateGrid()
     {
-        for (int ring = 0; ring < numberOfRings; ring++)
+        // Instantiate the central cell from the prefab
+        if (centralCellPrefab != null)
+        {
+            GameObject centralCell = Instantiate(centralCellPrefab, Vector3.zero, Quaternion.identity);
+            centralCell.transform.parent = this.transform;
+            gridCells.Add(centralCell); // Add central cell to the list
+        }
+        else
+        {
+            Debug.LogWarning("Central Cell Prefab is not assigned!");
+        }
+
+        // Generate the rest of the grid cells around the central cell
+        for (int ring = 1; ring < numberOfRings; ring++)
         {
             float innerRadius = ring * ringSpacing;
             float outerRadius = (ring + 1) * ringSpacing;
@@ -77,8 +91,10 @@ public class CircularGrid : MonoBehaviour
 
         meshFilter.mesh = mesh;
 
-        // Add a basic material (you can customize this as needed)
-        meshRenderer.material = new Material(Shader.Find("Standard"));
+        // Add a basic material with white color
+        Material whiteMaterial = new Material(Shader.Find("Standard"));
+        whiteMaterial.color = Color.white; // Set the material color to white
+        meshRenderer.material = whiteMaterial;
 
         return gridCell;
     }

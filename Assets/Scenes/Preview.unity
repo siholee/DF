@@ -352,6 +352,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e9917130d0624ab198b42e4169584f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  centralCellPrefab: {fileID: 7195003883246125450, guid: 6405cf85fc8954467ae52cabaea4b462,
+    type: 3}
   numberOfRings: 5
   sectorsPerRing: 6
   ringSpacing: 2
@@ -363,7 +365,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 931637704}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 9.972923, y: -9.028061, z: 39.86609}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
