@@ -236,7 +236,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84450ce9c71084e5d8483b091d7f50fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buildingPrefab: {fileID: 0}
+  buildingPrefab: {fileID: 7195003883246125450, guid: 6405cf85fc8954467ae52cabaea4b462,
+    type: 3}
   gridLayerMask:
     serializedVersion: 2
     m_Bits: 0
@@ -631,7 +632,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1266127764}
-  - component: {fileID: 1266127763}
+  - component: {fileID: 1266127765}
   m_Layer: 0
   m_Name: GameObject
   m_TagString: Untagged
@@ -639,19 +640,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1266127763
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1266127762}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9256061a69ba1420a8fd58e224459610, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  heroes: []
 --- !u!4 &1266127764
 Transform:
   m_ObjectHideFlags: 0
@@ -667,6 +655,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1266127765
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1266127762}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e51a7c106be414b49942bcebe7ebf544, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MainTower: {fileID: 7195003883246125450, guid: 6405cf85fc8954467ae52cabaea4b462,
+    type: 3}
+  SummonButton: {fileID: 2069810877}
+  HeroPrefab: {fileID: 8590073892715507532, guid: b6f2fb7b5e6a8436ba15434a01ed8965,
+    type: 3}
+  gridSystem: {fileID: 931637705}
+  buildingPlacer: {fileID: 577227648}
 --- !u!1 &1559117211
 GameObject:
   m_ObjectHideFlags: 0
@@ -851,7 +858,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2069810878}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 11500000, guid: e51a7c106be414b49942bcebe7ebf544, type: 3}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2069810878
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -919,7 +938,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e51a7c106be414b49942bcebe7ebf544, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MainTower: {fileID: 1266127762}
+  MainTower: {fileID: 7195003883246125450, guid: 6405cf85fc8954467ae52cabaea4b462,
+    type: 3}
   SummonButton: {fileID: 2069810877}
   HeroPrefab: {fileID: 8590073892715507532, guid: b6f2fb7b5e6a8436ba15434a01ed8965,
     type: 3}

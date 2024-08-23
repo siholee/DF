@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Hero : Unit
+public class Enemy : Unit
 {
 
     void Update()
