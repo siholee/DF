@@ -23,19 +23,16 @@ public class Unit : MonoBehaviour
         CreateAttackRangeIndicator();
     }
 
-    // ATK_RANGE에 기반한 보이지 않는 원을 생성하는 메서드
     void CreateAttackRangeIndicator()
     {
         GameObject rangeIndicator = new GameObject("AttackRange");
         rangeIndicator.transform.parent = this.transform;
         rangeIndicator.transform.localPosition = Vector3.zero;
 
-        // 원형 콜라이더 추가
         SphereCollider rangeCollider = rangeIndicator.AddComponent<SphereCollider>();
-        rangeCollider.isTrigger = true; // 트리거로 설정
+        rangeCollider.isTrigger = true; 
         rangeCollider.radius = ATK_RANGE;
 
-        // 콜라이더가 보이지 않도록 합니다.
         MeshRenderer renderer = rangeIndicator.AddComponent<MeshRenderer>();
         renderer.enabled = false;
     }

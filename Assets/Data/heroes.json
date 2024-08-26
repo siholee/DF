@@ -1,0 +1,12 @@
+{ "heroes":[
+    {
+        "NAME": "a",
+        "TYPE": "SR",
+        "HP" : 300000,
+        "ATK" : 100,
+        "DEF": 100,
+        "ATK_RANGE": 3,
+        "ATK_SPD": 3.1,
+        "MOVE_SPD": 0
+    }
+]}
