@@ -2,11 +2,14 @@
     {
         "NAME": "a",
         "TYPE": "SR",
-        "HP" : 300000,
-        "ATK" : 100,
-        "DEF": 100,
-        "ATK_RANGE": 3,
-        "ATK_SPD": 3.1,
-        "MOVE_SPD": 0
+        "ATK_TYPE": "범위",
+        "CARTRIDGE": 10,
+        "RELOAD_SPD": 3,
+        "HP_BASE": 300000,
+        "ATK-BASE": 100,
+        "DEF_BASE": 100,
+        "ATK_RANGE_BASE": 3,
+        "ATK_SPD_BASE": 3.1,
+        "PASSIVE": "3턴에 한방 강하게 공,"
     }
 ]}

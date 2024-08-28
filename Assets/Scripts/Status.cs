@@ -8,6 +8,6 @@ public class Status : MonoBehaviour
     public float MULBUFF;
     public float SUMBUFF;
     public int REMAIN_COUNT;
-    public int REMAIN_TURN;
+    public int REMAIN_TIME;
     public string CUSTOM_EFFECT;
 }
