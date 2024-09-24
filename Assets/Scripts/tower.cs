@@ -5,7 +5,7 @@ using UnityEngine;
 public class tower : MonoBehaviour
 {
     public List<GameObject> heroes;
-    
+    public int TOWER_LEVEL;
 
     void Start()
     {
