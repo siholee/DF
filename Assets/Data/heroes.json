@@ -1,12 +1,22 @@
 { "heroes":[
     {
-        "NAME": "Kar98",
-        "TYPE": "R",
-        "HP" : 200,
-        "ATK" : 40,
-        "DEF": 10,
+        "ID": 1,
+        "RANK": 3,
+        "NAME:": "Kar98",
+        "POS": "ATK",
+        "ATK": 1,
+        "DEF": 1,
+        "HP" : 200,  
         "ATK_RANGE": 17,
         "ATK_SPD": 1,
-        "MOVE_SPD": 0
+        "ATK_TARGET": "BOSS",
+        "SKILL": [
+            {
+                "ID": 1
+            },
+            {
+                "ID": 2
+            }
+        ]
     }
 ]}
