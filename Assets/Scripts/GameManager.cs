@@ -8,99 +8,75 @@ public class GameManager : MonoBehaviour
     public GameObject MainTower; // MainTower object
     public Button SummonButton; // Button to summon heroes
     public GameObject HeroPrefab; // Prefab for heroes
-    public CircularGrid gridSystem; // Reference to the CircularGrid script
-    public CircularBuildingPlacer buildingPlacer; // Reference to the building placer script
-    public int round;
+    public int ROUND;
     public int RESOURCE1;
     public int RESOURCE2;
     public List<Hero> HERO_LIST;
     public List<Hero> HERO_ON_DECK;
+    public List<Hero> SELECT_HERO_LIST;
 
     void Start()
     {
-        // Hook up the SummonButton click event
-        SummonButton.onClick.AddListener(CreateNewHero);
 
-        // Initialize the grid system
-        InitializeGridSystem();
     }
 
     void Update()
     {
-        // Add any updates that need to interact with the grid or other game logic
+
     }
 
-    void InitializeGridSystem()
+   void SummonHero()
+   {
+    if (MainTower != null)
     {
-        if (gridSystem != null)
+        // MainTower의 TOWER_LEVEL을 가져옴
+        int LOTTERY_LEVEL = MainTower.GetComponent<tower>().TOWER_LEVEL;
+
+        // List<Hero> SELECT_HERO_LIST 초기화
+        List<Hero> SELECT_HERO_LIST = new List<Hero>();
+
+        // 확률에 따라 RANK 결정
+        for (int i = 0; i < 5; i++)
         {
-            gridSystem.GenerateGrid();
-        }
-    }
-
-    void CreateNewHero()
-    {
-        // Example interaction: place a building on the grid when summoning a hero
-        if (MainTower != null && HeroPrefab != null)
-        {
-            // Summon hero at the MainTower
-            tower towerComponent = MainTower.GetComponent<tower>();
-
-            if (towerComponent != null)
-            {
-                GameObject newHeroObject = Instantiate(HeroPrefab);
-                newHeroObject.transform.SetParent(MainTower.transform);
-                towerComponent.heroes.Add(newHeroObject);
-
-                // Optionally, place a building on the grid
-                PlaceBuildingOnGrid();
-            }
-        }
-    }
-
-    void PlaceBuildingOnGrid()
-    {
-        if (buildingPlacer != null)
-        {
-            // Assume that buildingPlacer will handle the actual placement
-            buildingPlacer.PlaceBuilding();
-        }
-    }
-
-    void SummonHero()
-    {
-        if (MainTower != null)
-        {
-            // MainTower의 TOWER_LEVEL을 가져옴
-            int LOTTERY_LEVEL = MainTower.GetComponent<tower>().TOWER_LEVEL;
-
-            // 확률에 따라 RANK 결정 (예시로 3개의 RANK로 나눔: 1, 2, 3)
             float randomValue = Random.value; // 0.0f에서 1.0f 사이의 랜덤 값
-            int RANK;
+            int RANK = 1;
 
-            if (randomValue < 0.5f) // 50% 확률로 RANK 1
+            switch (LOTTERY_LEVEL)
             {
-                RANK = 1;
-            }
-            else if (randomValue < 0.8f) // 30% 확률로 RANK 2
-            {
-                RANK = 2;
-            }
-            else // 20% 확률로 RANK 3
-            {
-                RANK = 3;
+                case 1: // 최대 30
+                    if (randomValue < 1.0f) RANK = 1;
+                    break;
+                case 2: // 최대 25
+                    if (randomValue < 1.0f) RANK = 1;
+                    else if (randomValue < 1.25f) RANK = 2;
+                    break;
+                case 3: // 최대 18
+                    if (randomValue < 0.75f) RANK = 1;
+                    else if (randomValue < 1.0f) RANK = 2;
+                    break;
+                case 4: // 최대 10
+                    if (randomValue < 0.55f) RANK = 1;
+                    else if (randomValue < 0.8f) RANK = 2;
+                    else if (randomValue < 0.95f) RANK = 3;
+                    break;
+                case 5: // 최대 9
+                    if (randomValue < 0.45f) RANK = 1;
+                    else if (randomValue < 0.7f) RANK = 2;
+                    else RANK = 3;
+                    break;
+                default:
+                    RANK = 1;
+                    break;
             }
 
             // HERO_LIST에서 HERO_RANK가 RANK와 동일한 영웅들을 필터링
             List<Hero> filteredHeroes = HERO_LIST.FindAll(hero => hero.HERO_RANK == RANK);
 
-            // 필터링된 리스트가 비어 있지 않으면 랜덤하게 하나 선택
+            // 필터링된 리스트가 비어 있지 않으면 랜덤하게 하나 선택하여 SELECT_HERO_LIST에 추가
             if (filteredHeroes.Count > 0)
             {
                 Hero selectedHero = filteredHeroes[Random.Range(0, filteredHeroes.Count)];
-
-                // HERO_ON_DECK에 추가
-                HERO_ON_DECK.Add(selectedHero);
+                SELECT_HERO_LIST.Add(selectedHero);
 
                 // 로그 출력 (디버깅용)
                 Debug.Log($"소환된 영웅: {selectedHero.NAME}, RANK: {selectedHero.HERO_RANK}");
@@ -109,10 +85,8 @@ public class GameManager : MonoBehaviour
             {
                 Debug.LogWarning($"RANK {RANK}에 해당하는 영웅이 없습니다.");
             }
-        }
-        else
-        {
-            Debug.LogWarning("MainTower가 설정되지 않았습니다.");
-        }
-    }
+        } } else {
+                Debug.LogWarning("MainTower가 설정되지 않았습니다.");
+                }
+            }
 }
