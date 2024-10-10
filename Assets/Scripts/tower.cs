@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class tower : MonoBehaviour
+public class Tower : MonoBehaviour
 {
     public List<GameObject> heroes;
     public int TOWER_LEVEL;

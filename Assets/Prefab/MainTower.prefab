@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1672855359579617752}
   - component: {fileID: 3594696292454746076}
   - component: {fileID: 3304539535347072616}
+  - component: {fileID: 8001873553033507168}
   m_Layer: 0
   m_Name: MainTower
   m_TagString: Untagged
@@ -83,3 +84,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &8001873553033507168
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7195003883246125450}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9256061a69ba1420a8fd58e224459610, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  heroes: []
+  TOWER_LEVEL: 1

@@ -1,0 +1,1004 @@
+{
+    "heroes": [
+        {
+            "ID": 1,
+            "RANK": 1,
+            "NAME": "A",
+            "POS": "ATK",
+            "ATK": 51,
+            "DEF": 80,
+            "HP": 372,
+            "ATK_RANGE": 25,
+            "ATK_SPD": 8,
+            "ATK_TARGET": "BOSS",
+            "SKILL": [
+                {
+                    "ID": 1
+                },
+                {
+                    "ID": 2
+                }
+            ]
+        },
+        {
+            "ID": 2,
+            "RANK": 1,
+            "NAME": "B",
+            "POS": "ATK",
+            "ATK": 60,
+            "DEF": 73,
+            "HP": 343,
+            "ATK_RANGE": 13,
+            "ATK_SPD": 8,
+            "ATK_TARGET": "BOSS",
+            "SKILL": [
+                {
+                    "ID": 1
+                },
+                {
+                    "ID": 2
+                }
+            ]
+        },
+        {
+            "ID": 3,
+            "RANK": 1,
+            "NAME": "C",
+            "POS": "ATK",
+            "ATK": 64,
+            "DEF": 28,
+            "HP": 288,
+            "ATK_RANGE": 24,
+            "ATK_SPD": 9,
+            "ATK_TARGET": "BOSS",
+            "SKILL": [
+                {
+                    "ID": 1
+                },
+                {
+                    "ID": 2
+                }
+            ]
+        },
+        {
+            "ID": 4,
+            "RANK": 1,
+            "NAME": "D",
+            "POS": "ATK",
+            "ATK": 40,
+            "DEF": 70,
+            "HP": 148,
+            "ATK_RANGE": 10,
+            "ATK_SPD": 7,
+            "ATK_TARGET": "BOSS",
+            "SKILL": [
+                {
+                    "ID": 1
+                },
+                {
+                    "ID": 2
+                }
+            ]
+        },
+        {
+            "ID": 5,
+            "RANK": 1,
+            "NAME": "E",
+            "POS": "ATK",
+            "ATK": 27,
+            "DEF": 79,
+            "HP": 172,
+            "ATK_RANGE": 8,
+            "ATK_SPD": 1,
+            "ATK_TARGET": "BOSS",
+            "SKILL": [
+                {
+                    "ID": 1
+                },
+                {
+                    "ID": 2
+                }
+            ]
+        },
+        {
+            "ID": 6,
+            "RANK": 1,
+            "NAME": "F",
+            "POS": "ATK",
+            "ATK": 84,
+            "DEF": 35,
+            "HP": 196,
+            "ATK_RANGE": 14,
+            "ATK_SPD": 2,
+            "ATK_TARGET": "BOSS",
+            "SKILL": [
+                {
+                    "ID": 1
+                },
+                {
+                    "ID": 2
+                }
+            ]
+        },
+        {
+            "ID": 7,
+            "RANK": 1,
+            "NAME": "G",
+            "POS": "ATK",
+            "ATK": 42,
+            "DEF": 91,
+            "HP": 454,
+            "ATK_RANGE": 17,
+            "ATK_SPD": 5,
+            "ATK_TARGET": "BOSS",
+            "SKILL": [
+                {
+                    "ID": 1
+                },
+                {
+                    "ID": 2
+                }
+            ]
+        },
+        {
+            "ID": 8,
+            "RANK": 1,
+            "NAME": "H",
+            "POS": "ATK",
+            "ATK": 43,
+            "DEF": 71,
+            "HP": 297,
+            "ATK_RANGE": 9,
+            "ATK_SPD": 6,
+            "ATK_TARGET": "BOSS",
+            "SKILL": [
+                {
+                    "ID": 1
+                },
+                {
+                    "ID": 2
+                }
+            ]
+        },
+        {
+            "ID": 9,
+            "RANK": 1,
+            "NAME": "I",
+            "POS": "ATK",
+            "ATK": 52,
+            "DEF": 46,
+            "HP": 390,
+            "ATK_RANGE": 25,
+            "ATK_SPD": 4,
+            "ATK_TARGET": "BOSS",
+            "SKILL": [
+                {
+                    "ID": 1
+                },
+                {
+                    "ID": 2
+                }
+            ]
+        },
+        {
+            "ID": 10,
+            "RANK": 1,
+            "NAME": "J",
+            "POS": "ATK",
+            "ATK": 27,
+            "DEF": 55,
+            "HP": 492,
+            "ATK_RANGE": 19,
+            "ATK_SPD": 6,
+            "ATK_TARGET": "BOSS",
+            "SKILL": [
+                {
+                    "ID": 1
+                },
+                {
+                    "ID": 2
+                }
+            ]
+        },
+        {
+            "ID": 11,
+            "RANK": 2,
+            "NAME": "A",
+            "POS": "ATK",
+            "ATK": 12,
+            "DEF": 19,
+            "HP": 189,
+            "ATK_RANGE": 20,
+            "ATK_SPD": 2,
+            "ATK_TARGET": "BOSS",
+            "SKILL": [
+                {
+                    "ID": 1
+                },
+                {
+                    "ID": 2
+                }
+            ]
+        },
+        {
+            "ID": 12,
+            "RANK": 2,
+            "NAME": "B",
+            "POS": "ATK",
+            "ATK": 19,
+            "DEF": 21,
+            "HP": 454,
+            "ATK_RANGE": 15,
+            "ATK_SPD": 7,
+            "ATK_TARGET": "BOSS",
+            "SKILL": [
+                {
+                    "ID": 1
+                },
+                {
+                    "ID": 2
+                }
+            ]
+        },
+        {
+            "ID": 13,
+            "RANK": 2,
+            "NAME": "C",
+            "POS": "ATK",
+            "ATK": 29,
+            "DEF": 82,
+            "HP": 470,
+            "ATK_RANGE": 20,
+            "ATK_SPD": 9,
+            "ATK_TARGET": "BOSS",
+            "SKILL": [
+                {
+                    "ID": 1
+                },
+                {
+                    "ID": 2
+                }
+            ]
+        },
+        {
+            "ID": 14,
+            "RANK": 2,
+            "NAME": "D",
+            "POS": "ATK",
+            "ATK": 100,
+            "DEF": 61,
+            "HP": 460,
+            "ATK_RANGE": 7,
+            "ATK_SPD": 5,
+            "ATK_TARGET": "BOSS",
+            "SKILL": [
+                {
+                    "ID": 1
+                },
+                {
+                    "ID": 2
+                }
+            ]
+        },
+        {
+            "ID": 15,
+            "RANK": 2,
+            "NAME": "E",
+            "POS": "ATK",
+            "ATK": 98,
+            "DEF": 43,
+            "HP": 327,
+            "ATK_RANGE": 10,
+            "ATK_SPD": 2,
+            "ATK_TARGET": "BOSS",
+            "SKILL": [
+                {
+                    "ID": 1
+                },
+                {
+                    "ID": 2
+                }
+            ]
+        },
+        {
+            "ID": 16,
+            "RANK": 2,
+            "NAME": "F",
+            "POS": "ATK",
+            "ATK": 76,
+            "DEF": 46,
+            "HP": 197,
+            "ATK_RANGE": 10,
+            "ATK_SPD": 3,
+            "ATK_TARGET": "BOSS",
+            "SKILL": [
+                {
+                    "ID": 1
+                },
+                {
+                    "ID": 2
+                }
+            ]
+        },
+        {
+            "ID": 17,
+            "RANK": 2,
+            "NAME": "G",
+            "POS": "ATK",
+            "ATK": 69,
+            "DEF": 38,
+            "HP": 270,
+            "ATK_RANGE": 24,
+            "ATK_SPD": 5,
+            "ATK_TARGET": "BOSS",
+            "SKILL": [
+                {
+                    "ID": 1
+                },
+                {
+                    "ID": 2
+                }
+            ]
+        },
+        {
+            "ID": 18,
+            "RANK": 2,
+            "NAME": "H",
+            "POS": "ATK",
+            "ATK": 28,
+            "DEF": 80,
+            "HP": 321,
+            "ATK_RANGE": 6,
+            "ATK_SPD": 4,
+            "ATK_TARGET": "BOSS",
+            "SKILL": [
+                {
+                    "ID": 1
+                },
+                {
+                    "ID": 2
+                }
+            ]
+        },
+        {
+            "ID": 19,
+            "RANK": 2,
+            "NAME": "I",
+            "POS": "ATK",
+            "ATK": 21,
+            "DEF": 19,
+            "HP": 472,
+            "ATK_RANGE": 22,
+            "ATK_SPD": 6,
+            "ATK_TARGET": "BOSS",
+            "SKILL": [
+                {
+                    "ID": 1
+                },
+                {
+                    "ID": 2
+                }
+            ]
+        },
+        {
+            "ID": 20,
+            "RANK": 2,
+            "NAME": "J",
+            "POS": "ATK",
+            "ATK": 58,
+            "DEF": 92,
+            "HP": 316,
+            "ATK_RANGE": 8,
+            "ATK_SPD": 8,
+            "ATK_TARGET": "BOSS",
+            "SKILL": [
+                {
+                    "ID": 1
+                },
+                {
+                    "ID": 2
+                }
+            ]
+        },
+        {
+            "ID": 21,
+            "RANK": 3,
+            "NAME": "A",
+            "POS": "ATK",
+            "ATK": 26,
+            "DEF": 22,
+            "HP": 486,
+            "ATK_RANGE": 14,
+            "ATK_SPD": 5,
+            "ATK_TARGET": "BOSS",
+            "SKILL": [
+                {
+                    "ID": 1
+                },
+                {
+                    "ID": 2
+                }
+            ]
+        },
+        {
+            "ID": 22,
+            "RANK": 3,
+            "NAME": "B",
+            "POS": "ATK",
+            "ATK": 65,
+            "DEF": 66,
+            "HP": 490,
+            "ATK_RANGE": 19,
+            "ATK_SPD": 6,
+            "ATK_TARGET": "BOSS",
+            "SKILL": [
+                {
+                    "ID": 1
+                },
+                {
+                    "ID": 2
+                }
+            ]
+        },
+        {
+            "ID": 23,
+            "RANK": 3,
+            "NAME": "C",
+            "POS": "ATK",
+            "ATK": 67,
+            "DEF": 48,
+            "HP": 261,
+            "ATK_RANGE": 25,
+            "ATK_SPD": 8,
+            "ATK_TARGET": "BOSS",
+            "SKILL": [
+                {
+                    "ID": 1
+                },
+                {
+                    "ID": 2
+                }
+            ]
+        },
+        {
+            "ID": 24,
+            "RANK": 3,
+            "NAME": "D",
+            "POS": "ATK",
+            "ATK": 72,
+            "DEF": 13,
+            "HP": 321,
+            "ATK_RANGE": 12,
+            "ATK_SPD": 9,
+            "ATK_TARGET": "BOSS",
+            "SKILL": [
+                {
+                    "ID": 1
+                },
+                {
+                    "ID": 2
+                }
+            ]
+        },
+        {
+            "ID": 25,
+            "RANK": 3,
+            "NAME": "E",
+            "POS": "ATK",
+            "ATK": 75,
+            "DEF": 33,
+            "HP": 103,
+            "ATK_RANGE": 11,
+            "ATK_SPD": 9,
+            "ATK_TARGET": "BOSS",
+            "SKILL": [
+                {
+                    "ID": 1
+                },
+                {
+                    "ID": 2
+                }
+            ]
+        },
+        {
+            "ID": 26,
+            "RANK": 3,
+            "NAME": "F",
+            "POS": "ATK",
+            "ATK": 57,
+            "DEF": 27,
+            "HP": 487,
+            "ATK_RANGE": 7,
+            "ATK_SPD": 9,
+            "ATK_TARGET": "BOSS",
+            "SKILL": [
+                {
+                    "ID": 1
+                },
+                {
+                    "ID": 2
+                }
+            ]
+        },
+        {
+            "ID": 27,
+            "RANK": 3,
+            "NAME": "G",
+            "POS": "ATK",
+            "ATK": 33,
+            "DEF": 52,
+            "HP": 243,
+            "ATK_RANGE": 19,
+            "ATK_SPD": 10,
+            "ATK_TARGET": "BOSS",
+            "SKILL": [
+                {
+                    "ID": 1
+                },
+                {
+                    "ID": 2
+                }
+            ]
+        },
+        {
+            "ID": 28,
+            "RANK": 3,
+            "NAME": "H",
+            "POS": "ATK",
+            "ATK": 64,
+            "DEF": 39,
+            "HP": 286,
+            "ATK_RANGE": 17,
+            "ATK_SPD": 1,
+            "ATK_TARGET": "BOSS",
+            "SKILL": [
+                {
+                    "ID": 1
+                },
+                {
+                    "ID": 2
+                }
+            ]
+        },
+        {
+            "ID": 29,
+            "RANK": 3,
+            "NAME": "I",
+            "POS": "ATK",
+            "ATK": 30,
+            "DEF": 24,
+            "HP": 327,
+            "ATK_RANGE": 10,
+            "ATK_SPD": 6,
+            "ATK_TARGET": "BOSS",
+            "SKILL": [
+                {
+                    "ID": 1
+                },
+                {
+                    "ID": 2
+                }
+            ]
+        },
+        {
+            "ID": 30,
+            "RANK": 3,
+            "NAME": "J",
+            "POS": "ATK",
+            "ATK": 72,
+            "DEF": 89,
+            "HP": 101,
+            "ATK_RANGE": 23,
+            "ATK_SPD": 10,
+            "ATK_TARGET": "BOSS",
+            "SKILL": [
+                {
+                    "ID": 1
+                },
+                {
+                    "ID": 2
+                }
+            ]
+        },
+        {
+            "ID": 31,
+            "RANK": 4,
+            "NAME": "A",
+            "POS": "ATK",
+            "ATK": 54,
+            "DEF": 50,
+            "HP": 108,
+            "ATK_RANGE": 20,
+            "ATK_SPD": 5,
+            "ATK_TARGET": "BOSS",
+            "SKILL": [
+                {
+                    "ID": 1
+                },
+                {
+                    "ID": 2
+                }
+            ]
+        },
+        {
+            "ID": 32,
+            "RANK": 4,
+            "NAME": "B",
+            "POS": "ATK",
+            "ATK": 66,
+            "DEF": 34,
+            "HP": 378,
+            "ATK_RANGE": 22,
+            "ATK_SPD": 6,
+            "ATK_TARGET": "BOSS",
+            "SKILL": [
+                {
+                    "ID": 1
+                },
+                {
+                    "ID": 2
+                }
+            ]
+        },
+        {
+            "ID": 33,
+            "RANK": 4,
+            "NAME": "C",
+            "POS": "ATK",
+            "ATK": 58,
+            "DEF": 52,
+            "HP": 172,
+            "ATK_RANGE": 25,
+            "ATK_SPD": 1,
+            "ATK_TARGET": "BOSS",
+            "SKILL": [
+                {
+                    "ID": 1
+                },
+                {
+                    "ID": 2
+                }
+            ]
+        },
+        {
+            "ID": 34,
+            "RANK": 4,
+            "NAME": "D",
+            "POS": "ATK",
+            "ATK": 16,
+            "DEF": 16,
+            "HP": 370,
+            "ATK_RANGE": 9,
+            "ATK_SPD": 10,
+            "ATK_TARGET": "BOSS",
+            "SKILL": [
+                {
+                    "ID": 1
+                },
+                {
+                    "ID": 2
+                }
+            ]
+        },
+        {
+            "ID": 35,
+            "RANK": 4,
+            "NAME": "E",
+            "POS": "ATK",
+            "ATK": 74,
+            "DEF": 50,
+            "HP": 237,
+            "ATK_RANGE": 18,
+            "ATK_SPD": 4,
+            "ATK_TARGET": "BOSS",
+            "SKILL": [
+                {
+                    "ID": 1
+                },
+                {
+                    "ID": 2
+                }
+            ]
+        },
+        {
+            "ID": 36,
+            "RANK": 4,
+            "NAME": "F",
+            "POS": "ATK",
+            "ATK": 86,
+            "DEF": 87,
+            "HP": 460,
+            "ATK_RANGE": 12,
+            "ATK_SPD": 8,
+            "ATK_TARGET": "BOSS",
+            "SKILL": [
+                {
+                    "ID": 1
+                },
+                {
+                    "ID": 2
+                }
+            ]
+        },
+        {
+            "ID": 37,
+            "RANK": 4,
+            "NAME": "G",
+            "POS": "ATK",
+            "ATK": 83,
+            "DEF": 15,
+            "HP": 170,
+            "ATK_RANGE": 6,
+            "ATK_SPD": 3,
+            "ATK_TARGET": "BOSS",
+            "SKILL": [
+                {
+                    "ID": 1
+                },
+                {
+                    "ID": 2
+                }
+            ]
+        },
+        {
+            "ID": 38,
+            "RANK": 4,
+            "NAME": "H",
+            "POS": "ATK",
+            "ATK": 21,
+            "DEF": 56,
+            "HP": 133,
+            "ATK_RANGE": 8,
+            "ATK_SPD": 6,
+            "ATK_TARGET": "BOSS",
+            "SKILL": [
+                {
+                    "ID": 1
+                },
+                {
+                    "ID": 2
+                }
+            ]
+        },
+        {
+            "ID": 39,
+            "RANK": 4,
+            "NAME": "I",
+            "POS": "ATK",
+            "ATK": 12,
+            "DEF": 28,
+            "HP": 210,
+            "ATK_RANGE": 8,
+            "ATK_SPD": 3,
+            "ATK_TARGET": "BOSS",
+            "SKILL": [
+                {
+                    "ID": 1
+                },
+                {
+                    "ID": 2
+                }
+            ]
+        },
+        {
+            "ID": 40,
+            "RANK": 4,
+            "NAME": "J",
+            "POS": "ATK",
+            "ATK": 56,
+            "DEF": 68,
+            "HP": 122,
+            "ATK_RANGE": 15,
+            "ATK_SPD": 7,
+            "ATK_TARGET": "BOSS",
+            "SKILL": [
+                {
+                    "ID": 1
+                },
+                {
+                    "ID": 2
+                }
+            ]
+        },
+        {
+            "ID": 41,
+            "RANK": 5,
+            "NAME": "A",
+            "POS": "ATK",
+            "ATK": 42,
+            "DEF": 88,
+            "HP": 187,
+            "ATK_RANGE": 22,
+            "ATK_SPD": 2,
+            "ATK_TARGET": "BOSS",
+            "SKILL": [
+                {
+                    "ID": 1
+                },
+                {
+                    "ID": 2
+                }
+            ]
+        },
+        {
+            "ID": 42,
+            "RANK": 5,
+            "NAME": "B",
+            "POS": "ATK",
+            "ATK": 10,
+            "DEF": 36,
+            "HP": 413,
+            "ATK_RANGE": 22,
+            "ATK_SPD": 1,
+            "ATK_TARGET": "BOSS",
+            "SKILL": [
+                {
+                    "ID": 1
+                },
+                {
+                    "ID": 2
+                }
+            ]
+        },
+        {
+            "ID": 43,
+            "RANK": 5,
+            "NAME": "C",
+            "POS": "ATK",
+            "ATK": 81,
+            "DEF": 27,
+            "HP": 281,
+            "ATK_RANGE": 23,
+            "ATK_SPD": 1,
+            "ATK_TARGET": "BOSS",
+            "SKILL": [
+                {
+                    "ID": 1
+                },
+                {
+                    "ID": 2
+                }
+            ]
+        },
+        {
+            "ID": 44,
+            "RANK": 5,
+            "NAME": "D",
+            "POS": "ATK",
+            "ATK": 61,
+            "DEF": 61,
+            "HP": 308,
+            "ATK_RANGE": 12,
+            "ATK_SPD": 2,
+            "ATK_TARGET": "BOSS",
+            "SKILL": [
+                {
+                    "ID": 1
+                },
+                {
+                    "ID": 2
+                }
+            ]
+        },
+        {
+            "ID": 45,
+            "RANK": 5,
+            "NAME": "E",
+            "POS": "ATK",
+            "ATK": 93,
+            "DEF": 22,
+            "HP": 136,
+            "ATK_RANGE": 18,
+            "ATK_SPD": 4,
+            "ATK_TARGET": "BOSS",
+            "SKILL": [
+                {
+                    "ID": 1
+                },
+                {
+                    "ID": 2
+                }
+            ]
+        },
+        {
+            "ID": 46,
+            "RANK": 5,
+            "NAME": "F",
+            "POS": "ATK",
+            "ATK": 62,
+            "DEF": 55,
+            "HP": 369,
+            "ATK_RANGE": 20,
+            "ATK_SPD": 5,
+            "ATK_TARGET": "BOSS",
+            "SKILL": [
+                {
+                    "ID": 1
+                },
+                {
+                    "ID": 2
+                }
+            ]
+        },
+        {
+            "ID": 47,
+            "RANK": 5,
+            "NAME": "G",
+            "POS": "ATK",
+            "ATK": 84,
+            "DEF": 80,
+            "HP": 446,
+            "ATK_RANGE": 19,
+            "ATK_SPD": 5,
+            "ATK_TARGET": "BOSS",
+            "SKILL": [
+                {
+                    "ID": 1
+                },
+                {
+                    "ID": 2
+                }
+            ]
+        },
+        {
+            "ID": 48,
+            "RANK": 5,
+            "NAME": "H",
+            "POS": "ATK",
+            "ATK": 53,
+            "DEF": 73,
+            "HP": 304,
+            "ATK_RANGE": 9,
+            "ATK_SPD": 3,
+            "ATK_TARGET": "BOSS",
+            "SKILL": [
+                {
+                    "ID": 1
+                },
+                {
+                    "ID": 2
+                }
+            ]
+        },
+        {
+            "ID": 49,
+            "RANK": 5,
+            "NAME": "I",
+            "POS": "ATK",
+            "ATK": 36,
+            "DEF": 11,
+            "HP": 121,
+            "ATK_RANGE": 5,
+            "ATK_SPD": 1,
+            "ATK_TARGET": "BOSS",
+            "SKILL": [
+                {
+                    "ID": 1
+                },
+                {
+                    "ID": 2
+                }
+            ]
+        },
+        {
+            "ID": 50,
+            "RANK": 5,
+            "NAME": "J",
+            "POS": "ATK",
+            "ATK": 75,
+            "DEF": 44,
+            "HP": 153,
+            "ATK_RANGE": 18,
+            "ATK_SPD": 1,
+            "ATK_TARGET": "BOSS",
+            "SKILL": [
+                {
+                    "ID": 1
+                },
+                {
+                    "ID": 2
+                }
+            ]
+        }
+    ]
+}

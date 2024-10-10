@@ -3,16 +3,16 @@ using UnityEngine;
 
 public class Unit : MonoBehaviour
 {
+    public string ID;
     public string NAME;
-    public string TYPE;
-    public string RANK;
-    public int HP;
+    public string POS;
+    public int RANK;
+    public int HP_CURRENT;
     public int HP_MAX;
     public int ATK;
     public int DEF;
-    public int ATK_RANGE;
-    public double ATK_SPD;
-    public double MOVE_SPD;
+    public float ATK_SPD;
+    public float ATK_RANGE;
     public float CRT_POS;
     public float CRT_DMG;
 
@@ -32,9 +32,9 @@ public class Unit : MonoBehaviour
     public float ATK_SPD_MULBUFF;
     public float ATK_SPD_SUMBUFF;
 
-    public int MOVE_SPD_BASE;
-    public float MOVE_SPD_MULBUFF;
-    public float MOVE_SPD_SUMBUFF;
+    public int ATK_RANGE_BASE;
+    public float ATK_RANGE_MULBUFF;
+    public float ATK_RANGE_SUMBUFF;
 
     public float CRT_POS_BASE;
     public float CRT_POS_BUFF;
@@ -43,7 +43,6 @@ public class Unit : MonoBehaviour
     public float CRT_DMG_BUFF;
 
     public List<Status> STATUS_MANAGER;
-
     public List<GameObject> TARGET_HOLDER;
 
     // Start 메서드에서 원을 생성
@@ -72,7 +71,6 @@ public class Unit : MonoBehaviour
         ATK = (int)(ATK_BASE * (1 + (ATK_MULBUFF * 0.01f)) + ATK_SUMBUFF);
         DEF = (int)(DEF_BASE * (1 + (DEF_MULBUFF * 0.01f)) + DEF_SUMBUFF);
         ATK_SPD = (int)(ATK_SPD_BASE * (1 + (ATK_SPD_MULBUFF * 0.01f)) + ATK_SPD_SUMBUFF);
-        MOVE_SPD = (int)(MOVE_SPD_BASE * (1 + (MOVE_SPD_MULBUFF * 0.01f)) + MOVE_SPD_SUMBUFF);
         CRT_POS = CRT_POS_BASE + CRT_POS_BUFF;
         CRT_DMG = CRT_DMG_BASE + CRT_DMG_BUFF;
     }
